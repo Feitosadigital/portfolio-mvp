@@ -20,9 +20,10 @@ projetos.forEach(projeto => {
   div.classList.add("card");
 
   div.innerHTML = `
-    <h3>${projeto.nome}</h3>
-    <p>${projeto.descricao}</p>
-  `;
+  <h3>${projeto.nome}</h3>
+  <p>${projeto.descricao}</p>
+  <button onclick="alert('Projeto em desenvolvimento')">Ver projeto</button>
+`;
 
   container.appendChild(div);
 });
