@@ -84,3 +84,56 @@ footer {
     margin-top: 10px;
   }
 }
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #111827, #1f2937);
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  color: #9ca3af;
+}
+
+.hero img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+/* BOTÃO */
+.btn {
+  background: #3b82f6;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+/* ANIMAÇÃO */
+.card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer 0.6s forwards;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
